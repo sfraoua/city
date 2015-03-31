@@ -1,0 +1,171 @@
+{% extends 'front.html.twig' %}
+
+{% block body %}
+    <section class="row" id="intro">
+        <div class="overlay">
+            <div class="container">
+                <h1>Trouvez la ville de vos rêves</h1>
+                <p>
+                    Vestibulum tristique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at bibendum massa, accumsan semper leo. Cras pharetra dapibus nulla. Etiam nisl mauris, ultricies in efficitur ac, interdum vitae erat.
+                </p>
+                <hr />
+                <div class="row" id="index-search">
+                    <div class="col-lg-12 search-container">
+                        <h2>Chercher une ville</h2>
+                        <label for="name-search-radio">par Nom ou Code postal</label>
+                        <input id="name-search-radio" type="radio" name="seach_type"  checked="true" value="0"/>
+                        <label for="specific-search-radio">selon des critères spécifiques (note min. / 10)</label>
+                        <input id="specific-search-radio" type="radio" name="seach_type"  value="1"/>
+                        <div class="row">
+                            <div class="col-lg-12" id="name-search-row">
+                                <input type="text" id="search-city-name" placeholder="Nom" >
+                                <input type="text" id="search-city-zip" placeholder="Code Postal">
+                                <button class="btn btn-default submit"><i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="col-lg-12" id="specific-search-row" style="display: none">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="select">
+                                            <i class="fa fa-tree left"></i>
+                                            <select name="environement" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Environnement"><i class="fa fa-question"></i></span>
+                                        </div>
+                                        {# transport #}
+                                        <div class="select">
+                                            <i class="fa fa-taxi left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Transport"><i class="fa fa-question"></i></span>
+                                        </div>
+                                        {# security #}
+                                        <div class="select">
+                                            <i class="fa fa-exclamation left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Sécurité"><i class="fa fa-question"></i></span>
+                                        </div>
+                                        {# health #}
+                                        <div class="select">
+                                            <i class="fa fa-medkit left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Santé"><i class="fa fa-question"></i></span>
+                                        </div>
+
+                                        {# Sport & loisirs #}
+                                        <div class="select">
+                                            <i class="fa fa-music left top"></i>
+                                            <i class="fa fa-soccer-ball-o left bottom"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Sport & Loisirs"><i class="fa fa-question"></i></span>
+                                        </div>
+
+                                        {# Culture #}
+                                        <div class="select">
+                                            <i class="fa fa-film left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Culture"><i class="fa fa-question"></i></span>
+                                        </div>
+
+                                        {# Education #}
+                                        <div class="select">
+                                            <i class="fa fa-graduation-cap left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Enseignement"><i class="fa fa-question"></i></span>
+                                        </div>
+
+                                        {# Local Commerce #}
+                                        <div class="select">
+                                            <i class="fa fa-shopping-cart left"></i>
+                                            <select name="transport" class="form-control" id="filter-env">
+                                                {%for i in 1..9%}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {%endfor%}
+                                            </select>
+                                            <span type="button" class="btn infos" data-toggle="tooltip" data-placement="bottom" title="Commerce local"><i class="fa fa-question"></i></span>
+                                        </div>
+
+                                        <button class="btn btn-default submit"><i class="fa fa-search"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="display: none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container content" >
+        <div class="row">
+            <div class="col-lg-9 best-cities">
+                <h2>Les villes les plus agréables à vivre</h2>
+                {% set cities = ['Paris', 'Lyon', 'Marseille', 'Bordeaux', 'Versailles', 'Nice']%}
+                {% for i in 1..6 %}
+                    <div class="city" style="background-image: url('{{asset('images/city'~i~'.jpg')}}')">
+                        <div class="overlay">
+                            <h3>{{ cities[i-1] }}</h3>
+                            <p><b>9.6</b>/10<br /> (1025 avis)</p>
+                             <a href="{{ path('city_page', {slug:'paris-9'}) }}">voir plus d'avis</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-3 opinions">
+                <h2 class="row">Derniers avis</h2>
+                {% for i in 1..4 %}
+                    <div class="opinion">
+                        <h3>Avis sur <b>Paris 9</b> <small>par Selim F.</small></h3>
+                        <i class="avatar" style="background-image: url('{{asset('images/users/'~random(40)~'.jpg')}}')">avatar</i>
+                        <p class="good">
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius...
+                        </p>
+                        <p class="bad">
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius...
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('input[name="seach_type"]').on('change', function () {
+            if ($(this).val() == 0) {
+                $('#specific-search-row').hide()
+                $('#name-search-row').show()
+            } else {
+                $('#specific-search-row').show()
+                $('#name-search-row').hide()
+            }
+        })
+    </script>
+{% endblock %}

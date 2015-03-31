@@ -1,0 +1,48 @@
+@firstBarBgColor : #292828;
+/*@secondBarBgColor : rgba(99, 147, 153, 0.85);*/
+@secondBarBgColor : rgba(77, 156, 166, 0.85);
+@height: 40px;
+
+#mainmenu{
+    .logo{
+        position: absolute;
+        top: 15px;
+    }
+    a{
+        color: white;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        line-height: 44px;
+        width: 20%;
+        font-size: 18px;
+        margin-left: 120px;
+        li{
+            margin-right: 5px;
+            display: inline-block;
+        }
+    }
+    .first{
+        background-color: @firstBarBgColor;
+        height: @height;
+    }
+    .second{
+        .container{
+            height: 100%;
+        }
+        background-color: @secondBarBgColor;
+        height: @height;
+        ul.social-icons{
+            line-height: 40px;
+            margin-left: 0;
+            width: 100%;
+            padding: 0;
+            height: 40px;
+            li{
+                float: right;
+                margin-left: 5px;
+            }
+        }
+    }
+}

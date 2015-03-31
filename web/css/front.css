@@ -1,0 +1,395 @@
+html *,
+body * {
+  font-family: Roboto;
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4 {
+  font-family: Oswald;
+}
+/*@secondBarBgColor : rgba(99, 147, 153, 0.85);*/
+#mainmenu .logo {
+  position: absolute;
+  top: 15px;
+}
+#mainmenu a {
+  color: white;
+}
+#mainmenu ul {
+  padding: 0;
+  margin: 0;
+  line-height: 44px;
+  width: 20%;
+  font-size: 18px;
+  margin-left: 120px;
+}
+#mainmenu ul li {
+  margin-right: 5px;
+  display: inline-block;
+}
+#mainmenu .first {
+  background-color: #292828;
+  height: 40px;
+}
+#mainmenu .second {
+  background-color: rgba(77, 156, 166, 0.85);
+  height: 40px;
+}
+#mainmenu .second .container {
+  height: 100%;
+}
+#mainmenu .second ul.social-icons {
+  line-height: 40px;
+  margin-left: 0;
+  width: 100%;
+  padding: 0;
+  height: 40px;
+}
+#mainmenu .second ul.social-icons li {
+  float: right;
+  margin-left: 5px;
+}
+#intro {
+  background-image: url(../../../images/bg3.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  color: #e3e3e3;
+}
+#intro .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 40, 40, 0.21);
+}
+#intro .container {
+  height: 100%;
+}
+#intro .container h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  text-shadow: 1px 2px 0px #000;
+  margin-top: 150px;
+  text-align: center;
+}
+#intro .container p {
+  font-size: 20px;
+  width: 80%;
+  margin-left: 10%;
+  text-shadow: 1px 2px 0px #000;
+  text-align: center;
+}
+#intro .container hr {
+  width: 58%;
+}
+#index-search {
+  /*.boxShadow(2px, 2px, 2px, 2px, red);*/
+  margin-top: 0px;
+  background-color: rgba(18, 18, 18, 0.25);
+  padding-bottom: 30px;
+}
+#index-search h2 {
+  text-align: left;
+  text-shadow: 1px 2px 0px #000;
+}
+#index-search .search-container label {
+  font-weight: 100;
+  font-size: 20px;
+  text-shadow: 1px 2px 0px #000;
+}
+#index-search .search-container input[type="radio"] {
+  margin-right: 20px;
+  margin-left: 5px;
+  vertical-align: sub;
+  height: 18px;
+  width: 18px;
+}
+#index-search .search-container #name-search-row {
+  color: #6c6c6c;
+}
+#index-search .search-container #name-search-row input,
+#index-search .search-container #name-search-row select {
+  border: none;
+  height: 40px;
+  width: 30%;
+  font-size: 20px;
+  text-indent: 10px;
+  margin-right: 10px;
+}
+#index-search .search-container #specific-search-row {
+  color: #6c6c6c;
+}
+#index-search .search-container #specific-search-row .select {
+  width: 100px;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+#index-search .search-container #specific-search-row .select select {
+  border: none;
+  height: 40px;
+  width: 75px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 20px;
+  text-indent: 10px;
+  margin-right: 10px;
+}
+#index-search .search-container #specific-search-row .select .infos {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: rgba(102, 169, 178, 0.2);
+  color: rgba(255, 255, 255, 0.66);
+}
+#index-search .search-container #specific-search-row .select i.left {
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  font-size: 16px;
+}
+#index-search .search-container #specific-search-row .select i.left.top {
+  top: 2px;
+}
+#index-search .search-container #specific-search-row .select i.left.bottom {
+  top: 21px;
+}
+#index-search .search-container #specific-search-row .select i.fa-tree {
+  color: #577b57;
+}
+#index-search .search-container #specific-search-row .select i.fa-taxi {
+  color: #F0BF3D;
+}
+#index-search .search-container #specific-search-row .select i.fa-exclamation {
+  color: #BB2121;
+}
+#index-search .search-container button.submit {
+  height: 40px;
+  position: absolute;
+  font-size: 20px;
+  background-color: #c24f4f;
+  color: white;
+  border: none;
+}
+.content {
+  margin-top: 20px;
+}
+.content h2 {
+  color: #525252;
+  margin: 0;
+  padding: 15px;
+  padding-left: 0;
+  border-bottom: 1px solid #cdcdcd;
+  text-shadow: 1px 2px 0px #cdcdcd;
+}
+.content .opinions .opinion {
+  position: relative;
+}
+.content .opinions .opinion h3 {
+  font-size: 18px;
+}
+.content .opinions .opinion h3 b {
+  font-weight: 100;
+  font-family: Oswald;
+  color: #B26666;
+}
+.content .opinions .opinion i.avatar {
+  text-indent: -9999px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: -12px;
+  background-size: cover;
+  background-position: center;
+}
+.content .opinions .opinion p {
+  border-bottom: 1px dashed #b3b3b3;
+}
+.content .opinions .opinion p .fa-plus {
+  color: #B0D5B0;
+}
+.content .opinions .opinion p .fa-minus {
+  color: tomato;
+}
+.content .opinions .opinion p.bad {
+  padding-bottom: 8px;
+}
+.content .best-cities .city {
+  position: relative;
+  width: 49%;
+  height: 180px;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 0.3 ease-in-out;
+  -moz-transition: background-size 0.3s ease-in-out;
+  /* Firefox 4 */
+  -webkit-transition: background-size 0.3s ease-in-out;
+  /* Safari and Chrome */
+  -o-transition: background-size 0.3s ease-in-out;
+  /* Opera */
+}
+.content .best-cities .city .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(15, 15, 15, 0.26);
+  width: 100%;
+  height: 100%;
+}
+.content .best-cities .city h3,
+.content .best-cities .city p {
+  color: white;
+  text-shadow: 1px 2px 0px #000;
+}
+.content .best-cities .city p {
+  font-size: 1em;
+}
+.content .best-cities .city p b {
+  font-size: 4em;
+}
+.content .best-cities .city a {
+  text-indent: -9999px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content .best-cities .city:hover {
+  background-size: 120%;
+}
+.content .best-cities i {
+  background-image: url('/images/city1.jpg');
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#top {
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: #e3e3e3;
+}
+#top .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.45);
+}
+#top .container {
+  height: 100%;
+}
+#top .container h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  text-shadow: 1px 2px 0px #000;
+  margin-top: 150px;
+  text-align: center;
+}
+#top .container hr {
+  width: 58%;
+}
+.city-opinions {
+  /*    .opinion:nth-child(2n+1){
+            background-color: rgb(223, 223, 223);
+        }*/
+}
+.city-opinions .opinion {
+  position: relative;
+}
+.city-opinions .opinion h3 {
+  font-size: 18px;
+  padding: 0;
+  padding-left: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  background-color: #e2e2e2;
+}
+.city-opinions .opinion h3 b {
+  font-weight: 100;
+  font-family: Oswald;
+  color: #B26666;
+}
+.city-opinions .opinion .good {
+  color: rgba(28, 111, 32, 0.67);
+}
+.city-opinions .opinion .bad {
+  color: #cb7a7a;
+}
+.city-opinions .opinion i.avatar {
+  text-indent: -9999px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-size: cover;
+  background-position: center;
+}
+.city-opinions .opinion ul {
+  padding: 0;
+  list-style: none;
+}
+.city-opinions .opinion ul li {
+  display: inline-block;
+  max-width: 100px;
+  text-align: center;
+  border: 1px solid rgba(48, 48, 48, 0.21);
+  font-size: 2em;
+}
+.city-opinions .opinion ul li span {
+  display: inline-block;
+  width: 100%;
+  background-color: #a0a0a0;
+  color: white;
+  font-size: 14px;
+  float: left;
+}
+.city-opinions .opinion p {
+  font-size: 18px;
+}
+.city-opinions .opinion p .fa-plus {
+  color: #B0D5B0;
+}
+.city-opinions .opinion p .fa-minus {
+  color: tomato;
+}
+/*# sourceMappingURL=front.css.map */

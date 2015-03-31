@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('components/components-font-awesome/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/front.css') }}" />
+    <script src="{{ asset('components/jquery/dist/jquery.min.js') }}" ></script>
+    <script src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}" ></script>
+</head>
+<body>
+    
+    <header class="container-fluid" id="mainmenu">
+        <div class="container">
+            <img class="logo" alt="city adviser logo" src="{{ asset('images/logo.png') }}"/>
+        </div>
+        <div class="row first" >
+            <div class="container">
+                <ul class="social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row second">
+            <nav class="container">
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">Top villes</a>
+                    </li>
+                    <li>
+                        <a href="#">Les plus recherchés</a>
+                    </li>
+                    <li>
+                        <a href="#">Villes vertes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+{% block body %}
+{% endblock %}
+<script type="text/javascript">
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

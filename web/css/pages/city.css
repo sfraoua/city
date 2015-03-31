@@ -1,0 +1,26 @@
+#top {
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: #e3e3e3;
+}
+#top .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.45);
+}
+#top .container {
+  height: 100%;
+}
+#top .container h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  text-shadow: 1px 2px 0px #000;
+  margin-top: 150px;
+  text-align: center;
+}
+#top .container hr {
+  width: 58%;
+}
+/*# sourceMappingURL=city.css.map */

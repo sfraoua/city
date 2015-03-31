@@ -1,0 +1,70 @@
+{% extends 'front.html.twig' %}
+
+{% block body %}
+    <section class="row" id="top" style="background-image: url({{asset('images/cities/montmartre2.jpg')}})">
+        <div class="overlay">
+            <div class="container">
+                <h1>Avis sur Paris 9</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="container content" >
+        <div class="row">
+            
+            <div class="col-lg-8 city-opinions">
+                <h2 class="row">Les derniers avis </h2>
+                {% for i in 1..4 %}
+                    <div class="opinion">
+                        <i class="avatar" style="background-image: url('{{asset('images/users/'~random(40)~'.jpg')}}')">avatar</i>
+                        <h3>Avis rédigé par Selim F.</h3>
+                        <ul>
+                            <li><span>Environnement</span> 4</li>
+                            <li><span>Transport</span> 4</li>
+                            <li><span>Sécurité</span> 4</li>
+                            <li><span>Santé</span> 4</li>
+                            <li><span>Sports & Loisirs</span> 4</li>
+                            <li><span>Culture</span> 4</li>
+                            <li><span>Education</span> 4</li>
+                            <li><span>Commerce</span> 4</li>
+                        </ul>
+                        <h4 class="good">Les points positifs</h4>
+                        <p>
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius.
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius.
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius.
+                        </p>
+                        <h4 class="bad">Les points négatifs</h4>
+                        <p>
+                            ique magna vel metus condimentum sagittis vitae at sem. Duis fringilla tempor sapien a varius...
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4 best-cities">
+                <h2>Les villes les plus agréables à vivre</h2>
+                {% set cities = ['Paris', 'Lyon', 'Marseille', 'Bordeaux', 'Versailles', 'Nice']%}
+                {% for i in 1..6 %}
+                    <div class="city" style="background-image: url('{{asset('images/city'~i~'.jpg')}}')">
+                        <div class="overlay">
+                            <h3>{{ cities[i-1] }}</h3>
+                            <p><b>9.6</b>/10<br /> (1025 avis)</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('input[name="seach_type"]').on('change', function () {
+            if ($(this).val() == 0) {
+                $('#specific-search-row').hide()
+                $('#name-search-row').show()
+            } else {
+                $('#specific-search-row').show()
+                $('#name-search-row').hide()
+            }
+        })
+    </script>
+{% endblock %}
